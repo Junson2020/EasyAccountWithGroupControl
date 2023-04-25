@@ -28,7 +28,7 @@ if(empty($keyitem) or $keyitem=="") {	echo "EPARA"; exit; }
 if($keyitem!="ACCOUNTEDIT") { echo "EFUNC"; exit; }
 
 if($chkdel==1) {
-	if(CheckLevelByLicense($junsonlicense,"UserDEL",1)==1) {
+	if(CheckLevelByLicense($junsonlicense,"UserDEL",0)==1) {
 	  UptData($row,$account,'ACCOUNTDEL');
 	  echo $account." Account Deleted"; exit; 
 	}else {

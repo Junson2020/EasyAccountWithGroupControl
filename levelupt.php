@@ -21,7 +21,7 @@ if(empty($keyitem) or $keyitem=="") {	echo "EPARA"; exit; }
 if($keyitem!="LEVELEDIT") { echo "EFUNC"; exit; }
 
 if($chkdel==1) {
-	if(CheckLevelByLicense($junsonlicense,"LevelSave",1)==1) {
+	if(CheckLevelByLicense($junsonlicense,"LevelSave",0)==1) {
 	  UptData($row,$levelname,'LEVELDEL');
 	  echo $levelname." Level Deleted"; exit; 
 	}else {

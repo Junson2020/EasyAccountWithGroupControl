@@ -35,7 +35,7 @@ if(empty($keyitem) or $keyitem=="") {	echo "EPARA"; exit; }
 if($keyitem!="GROUPEDIT") { echo "EFUNC"; exit; }
 
 if($chkdel==1) {
-	if(CheckLevelByLicense($junsonlicense,"GroupSave",1)==1) {
+	if(CheckLevelByLicense($junsonlicense,"GroupSave",0)==1) {
 	  UptData($row,$groupname,'GROUPDEL');
 	  echo $groupname." Group Deleted"; exit; 
 	}else {
