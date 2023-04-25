@@ -23,6 +23,7 @@ if(empty($junsonlicense) or $junsonlicense=="") {
 	echo "  <td><a href='accountlist.php' target='_blank'>Account</a></td>";
 	echo "  <td><a href='levelmenu.php' target='_blank'>Level</a></td>";
 	echo "  <td><a href='grouplist.php' target='_blank'>Group</a></td>";
+	echo "  <td><a href='textencode.php' target='_blank'>TextEnCode</a></td>";
 	echo "  <td><a href='logout.php' target='_self'>Logout</a></td>";
 	echo " </tr>";
 	echo "</table>";
