@@ -463,6 +463,8 @@ function GetDataList($func,$item,$UserFlag) {
   	$GETdata="select * from groupitem ";
   }elseif($func=="GETGROUPITEMBYNAME") { 
   	$GETdata="select * from groupitem where gname='".$item."'";
+  }elseif($func=="GETGROUPLEVELBYNAME") { 
+  	$GETdata="select * from grouplevel where u_group='".$item."'";
   }
   
   try {

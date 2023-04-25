@@ -80,14 +80,14 @@ $(document).ready ( function() {
 $LevelData=array();
 $LevelData=GetDataList("GETLEVELITEMALL",$keyitem,0);
 $groupLevelData=array();
-$groupLevelData=GetDataList("GETGROUPITEMBYNAME",$keyitem,0);
+$groupLevelData=GetDataList("GETGROUPLEVELBYNAME",$keyitem,0);
 
 $groupLevelStr="";
 $n=count($groupLevelData);
 for($i=0;$i < $n;$i++) {
 	if($i==0) { $sp=""; } else { $sp=",";}
 	$tmpAry=$groupLevelData[$i];
-	$groupLevelStr=$groupLevelStr.$sp.$tmpAry[$JUNSON_ACCOUNTEDIT_STR001];
+	$groupLevelStr=$groupLevelStr.$sp.$tmpAry[$JUNSON_LEVELLIST_STR001];
 }
 echo "<br><br><br>";
 echo "<table cellspacing='1' cellpadding='1' border='1' width='800'>";  
