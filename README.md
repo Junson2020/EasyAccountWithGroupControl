@@ -27,8 +27,14 @@ EasyAccountDB.sql
 
 note: (備註)
 
-multiselect refer to url: http://loudev.com/#usage (多項選取是參考網頁: http://loudev.com/#usage)
+multiselect refer to url: http://loudev.com/#usage
 
-mariadb connection databaesname/username/password config in globalJunson.inc.php 
+多項選取是參考網頁: http://loudev.com/#usage
+
+mariadb databaesname/username/password need (simple)encode (textencode.php) before config into globalJunson.inc.php
+
+mariadb 資料庫名稱/帳號/密碼 在設定前須先經過(textencode.php)簡單編碼
+
+mariadb connection databaesname/username/password config into globalJunson.inc.php 
 
 mariadb 連接 資料庫名稱/帳號/密碼 設定於 globalJunson.inc.php
